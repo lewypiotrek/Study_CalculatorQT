@@ -319,10 +319,7 @@ void Calculator::on_pushButton_17_clicked()
         UpdateDisplay();
     }
 }
-
-
-
-
+// CONVERT
 void Calculator::on_comboBox_activated(const QString &arg1)
 {
     if( arg1 == "BIN")
@@ -335,7 +332,7 @@ void Calculator::on_comboBox_activated(const QString &arg1)
         ui->lcdNumber->setMode(ui->lcdNumber->Oct);
 
 }
-
+// SIGN CHANGE
 void Calculator::on_pushButton_12_clicked()
 {
     if (first)

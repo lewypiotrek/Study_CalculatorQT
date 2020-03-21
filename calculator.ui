@@ -75,6 +75,11 @@
             <height>35</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
           <property name="text">
            <string>x^n</string>
           </property>
@@ -94,6 +99,11 @@
             <height>35</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
           <property name="text">
            <string>modulo</string>
           </property>
@@ -112,6 +122,11 @@
             <width>0</width>
             <height>35</height>
            </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
           </property>
           <property name="text">
            <string>!</string>
@@ -230,7 +245,9 @@
             </property>
             <property name="font">
              <font>
-              <pointsize>16</pointsize>
+              <pointsize>13</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
              </font>
             </property>
             <property name="text">
@@ -479,7 +496,7 @@
             </property>
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>13</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -505,7 +522,7 @@
             </property>
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>13</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
@@ -534,6 +551,8 @@
               <pointsize>12</pointsize>
               <weight>75</weight>
               <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
              </font>
             </property>
             <property name="text">
@@ -557,7 +576,7 @@
             </property>
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>13</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
