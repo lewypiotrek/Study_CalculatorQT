@@ -11,6 +11,6 @@ Features:
         subtract,
         multiplication,
         division,
-        exponent4,
+        exponent,
         modulo,
         factorial
