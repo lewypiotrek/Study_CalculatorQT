@@ -65,13 +65,15 @@ private slots:
 
     void on_pushButton_12_clicked();
 
+    void on_pushButton_20_clicked();
+
 private:
     Ui::Calculator *ui;
 
 private:
     QString rightS, leftS, resultS;
     double right,left,result;
-    bool first,math;
+    bool first,math, commaL, commaR;
     int operation;
 
     enum operations{

@@ -10,6 +10,8 @@ Calculator::Calculator(QWidget *parent) :
 
    first = true;
    math= false;
+   commaL = false;
+   commaR = false;
 
    leftS = "0";
    rightS = "0";
@@ -31,16 +33,16 @@ void Calculator::InsertValue(double value)
 {
     if(first == true)
     {
-        if(left == 0)
+        if(leftS == '0')
         {
             left = value;
             leftS = QString::number(value);
             UpdateDisplay();
         }
-        else if (left != 0)
+        else if (left != 0 || leftS == "0.")
         {
             leftS = leftS + QString::number(value);
-            left = leftS.toInt();
+            left = leftS.toDouble();
             UpdateDisplay();
         }
 
@@ -48,16 +50,16 @@ void Calculator::InsertValue(double value)
     }
     else
     {
-        if(right == 0)
+        if(rightS == '0')
         {
             right = value;
             rightS = QString::number(value);
             UpdateDisplay();
         }
-        else if (right != 0)
+        else if (right != 0 || rightS == "0.")
         {
-            leftS = leftS + QString::number(value);
-            right = leftS.toInt();
+            rightS = rightS + QString::number(value);
+            right = rightS.toDouble();
             UpdateDisplay();
         }
     }
@@ -242,6 +244,8 @@ void Calculator::on_pushButton_10_clicked()
 void Calculator::on_pushButton_11_clicked()
 {
     first = true;
+    commaL = false;
+    commaR = false;
     left = 0;
     leftS ="0";
     right = 0;
@@ -348,4 +352,25 @@ void Calculator::on_pushButton_12_clicked()
         rightS = QString::number(right);
         UpdateDisplay();
     }
+}
+// COMMA
+void Calculator::on_pushButton_20_clicked()
+{
+    if(first)
+    {
+       if(commaL == false)
+       {
+           commaL = true;
+           leftS = leftS +'.';
+       }
+    }
+    else
+    {
+        if(commaR == false)
+        {
+            commaR = true;
+            rightS = rightS + '.';
+        }
+    }
+
 }
